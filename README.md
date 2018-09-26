@@ -1,5 +1,5 @@
 # codigoQuiniela
-##Resultados posibles de una quiniela en java
+## Resultados posibles de una quiniela en java
 ```java
 public class Act01Quiniela {
 
