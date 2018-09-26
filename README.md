@@ -22,22 +22,21 @@ public class Act01Quiniela {
                           for(int num12=1;num12<=3;num12++){
                             for(int num13=1;num13<=3;num13++){
                               for(int num14=1;num14<=3;num14++){
-                                           
-              numero=num1+""+num2+""+num3+""+num4+""+num5+""+num6+""+num7+""+num8+""+num9+""+num10+""+num11+""+num12+""+num13+""+num14;
+                                numero=num1+""+num2+""+num3+""+num4+""+num5+""+num6+""+num7+""+num8+""+num9+""+num10+""+num11+""+num12+""+num13+""+num14;
                                 cont1=0;cont2=0;cont3=0;
                                 for (int i = 0; i < numero.length(); i++) {
-									                if (numero.charAt(i)=='1') 
-										                cont1++;
-                                  else if (numero.charAt(i)=='2')
-										                cont2++;
-																	else
-																		cont3++;
+									if (numero.charAt(i)=='1') 
+										cont1++;
+									else if (numero.charAt(i)=='2')
+										cont2++;
+									else
+										cont3++;
 									
-																	if ((cont1>5&&cont1<11)&&(cont2>2&&cont2<6)&&(cont3>3&&cont3<9)) {
-																		System.out.print(numero.replace("2", "x").replace("3", "2"));  
-																		contador++;
-																		System.out.println("--------------------"+contador);
-																	}
+									if ((cont1>5&&cont1<11)&&(cont2>2&&cont2<6)&&(cont3>3&&cont3<9)) {
+										System.out.print(numero.replace("2", "x").replace("3", "2"));  
+										contador++;
+										System.out.println("--------------------"+contador);
+									}
                                 }
                               }
                             }
